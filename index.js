@@ -17,7 +17,7 @@ app.get("/", (req, res) => {
 app.get("/users", (req, res) => {
     const html = `
     <ul>
-        ${users.map((user) => `<li>${user.name} (${user.age})</li>`).join("")}
+        ${users.map((user) => `<li>${user.name}</li>`).join("")}
     </ul>
     `;
     res.send(html);
